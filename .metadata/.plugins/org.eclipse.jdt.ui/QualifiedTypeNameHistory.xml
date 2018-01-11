@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.stackroute.activitystream.securityservice.securityconfig.JWTLoginFilter"/>
+<fullyQualifiedTypeName name="com.stackroute.activitystream.securityservice.securityconfig.JWTAuthenticationFilter"/>
+<fullyQualifiedTypeName name="com.stackroute.activitystream.securityservice.securityconfig.TokenAuthenticationService"/>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.domain.EntityScan"/>
+<fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetailsService"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="com.stackroute.activitystream.securityservice.securityconfig.SecurityConstantVariables"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.orm.jpa.vendor.HibernateJpaSessionFactoryBean"/>
+<fullyQualifiedTypeName name="com.stackroute.activitystream.backend.model.UserRegistration"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ImportResource"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.PropertySource"/>
+</qualifiedTypeNameHistroy>
