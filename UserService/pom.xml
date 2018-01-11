@@ -37,7 +37,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.stackroute.activitystream</groupId>
-			<artifactId>SecurityService</artifactId>
+			<artifactId>BackEnd</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
