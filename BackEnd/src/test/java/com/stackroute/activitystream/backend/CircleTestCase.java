@@ -46,7 +46,7 @@ public class CircleTestCase {
 
 	@Test
 	public void createCircle() {
-		circle.setCircleName("koi");
+		circle.setCircleName("oi");
 		circle.setCreatedOn();
 		assertTrue(circleDAO.createCircle(circle));
 
