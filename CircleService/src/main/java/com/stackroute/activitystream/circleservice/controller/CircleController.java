@@ -27,7 +27,7 @@ public class CircleController {
 	@Autowired
 	CircleDAO circleDAO;
 	
-	@PostMapping(value="/circle", produces=MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(value="/circle")
 	public ResponseEntity<String> createCircle(@RequestBody Circle circle)
 	{
 		if(circleDAO.createCircle(circle))
@@ -40,7 +40,7 @@ public class CircleController {
 	}
 	
 	
-	@GetMapping(value="/circle", produces=MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(value="/circle")
 	public ResponseEntity<List<Circle>> getAllCircle()
 	{
 		List<Circle> allCircles=circleDAO.listOfAllCircles();
@@ -54,7 +54,7 @@ public class CircleController {
 		}
 	}
 	
-	@GetMapping(value="/circle/{circleId}", produces=MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(value="/circle/{circleId}")
 	public ResponseEntity<Circle> getCircle(@PathVariable("circleId") int circleId)
 	{
 		Circle singleCircle=circleDAO.findCircleById(circleId);
@@ -67,7 +67,7 @@ public class CircleController {
 		}
 	}
 	
-	@DeleteMapping(value="/circle/{circleId}", produces=MediaType.APPLICATION_JSON_VALUE)
+	@DeleteMapping(value="/circle/{circleId}")
 	public ResponseEntity<String> deleteCircle(@PathVariable("circleId") int circleId)
 	{
 		if(circleDAO.deleteCircle(circleId))
@@ -80,7 +80,7 @@ public class CircleController {
 		}
 	}
 	
-	@PutMapping(value="/circle/{circleId}", produces=MediaType.APPLICATION_JSON_VALUE)
+	@PutMapping(value="/circle/{circleId}")
 	public ResponseEntity<String> updateCircle(@PathVariable("circleId") int circleId,@RequestBody Circle circle)
 	{
 		Circle updateCircle=circleDAO.findCircleById(circleId);

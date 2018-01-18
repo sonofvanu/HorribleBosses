@@ -14,6 +14,9 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="E:\Iniitian\backupplan\CircleService"/>
+			<item value="E:\Iniitian\backupplan\UserService"/>
+			<item value="E:\Iniitian\backupplan\BackEnd"/>
 			<item value="G:\DT WAVE 3 PROJECT 2\SecurityService"/>
 			<item value="G:\DT WAVE 3 PROJECT 2\MessageService"/>
 			<item value="G:\DT WAVE 3 PROJECT 2\UserCircleService"/>

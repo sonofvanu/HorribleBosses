@@ -1,4 +1,4 @@
-/*package com.stackroute.activitystream.backend;
+package com.stackroute.activitystream.backend;
 
 import static org.junit.Assert.*;
 
@@ -51,7 +51,7 @@ public class MessageTestCase {
 		message.setMessageSentAt();
 		userRegistration=userDAO.findByEmail("milaga@gmail.com");
 		message.setSenderId(userRegistration.getUserEmail());
-		userRegistration=userDAO.findByEmail("poda@gmail.com");
+		userRegistration=userDAO.findByEmail("gamma@gmail.com");
 		message.setReceiverId(userRegistration.getUserEmail());
 		assertTrue(messageDAO.sendMessage(message));
 	}
@@ -59,15 +59,14 @@ public class MessageTestCase {
 	@Test
 	public void sendCircleMessage()
 	{
-		circle=circleDAO.findCircleById(2);
+		circle=circleDAO.findCircleById(21);
 		message.setCircleId(circle.getCircleId());
 		message.setMessageActual("hello pakkis");
 		message.setMessageSentOn();
 		message.setMessageSentAt();
-		userRegistration=userDAO.findByEmail("poda@gmail.com");
+		userRegistration=userDAO.findByEmail("gamma@gmail.com");
 		message.setSenderId(userRegistration.getUserEmail());
 		messageDAO.sendMessage(message);
 	}
 
 }
-*/
