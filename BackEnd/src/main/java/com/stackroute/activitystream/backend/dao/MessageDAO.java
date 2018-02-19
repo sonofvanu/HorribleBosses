@@ -22,6 +22,8 @@ public interface MessageDAO {
 	
 	public List<Message> allMessageToACircle(String circleName,String senderId);
 	
-	public List<Message> allMessageOfACircle(String circleName);
+	public List<Message> allMessageOfACircle(int circleId);
+	
+	public List<Message> messgaeBetweentwoUsers(String senderId,String userId);
 
 }

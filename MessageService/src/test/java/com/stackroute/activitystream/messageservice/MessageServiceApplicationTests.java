@@ -1,4 +1,4 @@
-package com.stackroute.activitystream.messageservice;
+/*package com.stackroute.activitystream.messageservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,3 +14,4 @@ public class MessageServiceApplicationTests {
 	}
 
 }
+*/

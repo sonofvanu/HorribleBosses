@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.stackroute.activitystream.backend.dao.UserDAO;
 import com.stackroute.activitystream.backend.model.UserRegistration;
 
-@CrossOrigin
+@CrossOrigin(origins="http://localhost:4200")
 @RestController
 public class UserController {
 

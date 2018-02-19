@@ -49,9 +49,9 @@ public class MessageTestCase {
 		message.setMessageActual("hello how are you-------im fine");
 		message.setMessageSentOn();
 		message.setMessageSentAt();
-		userRegistration=userDAO.findByEmail("milaga@gmail.com");
-		message.setSenderId(userRegistration.getUserEmail());
 		userRegistration=userDAO.findByEmail("gamma@gmail.com");
+		message.setSenderId(userRegistration.getUserEmail());
+		userRegistration=userDAO.findByEmail("milaga@gmail.com");
 		message.setReceiverId(userRegistration.getUserEmail());
 		assertTrue(messageDAO.sendMessage(message));
 	}
@@ -64,7 +64,7 @@ public class MessageTestCase {
 		message.setMessageActual("hello pakkis");
 		message.setMessageSentOn();
 		message.setMessageSentAt();
-		userRegistration=userDAO.findByEmail("gamma@gmail.com");
+		userRegistration=userDAO.findByEmail("milaga@gmail.com");
 		message.setSenderId(userRegistration.getUserEmail());
 		messageDAO.sendMessage(message);
 	}

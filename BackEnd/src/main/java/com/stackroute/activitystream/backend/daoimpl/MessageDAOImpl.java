@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Criterion;
+import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -80,11 +82,30 @@ public class MessageDAOImpl implements MessageDAO {
 			Criteria criteria=sessionFactory.getCurrentSession().createCriteria(Message.class);
 			criteria.add(Restrictions.eq("senderId", senderId));
 			criteria.add(Restrictions.eq("receiverId", receiverId));
+			
 			List<Message> allMessageToUser=criteria.list();
 			return allMessageToUser;
 		}
 		catch(Exception e)
 		{
+			return null;
+		}
+	}
+	
+	@Override
+	public List<Message> messgaeBetweentwoUsers(String senderId, String userId) {
+		// TODO Auto-generated method stub
+		try {
+			Criteria criteria=sessionFactory.getCurrentSession().createCriteria(Message.class);
+			Criterion condition1=Restrictions.and(Restrictions.eq("senderId", senderId),Restrictions.eq("receiverId", userId));
+			Criterion condition2=Restrictions.and(Restrictions.eq("senderId", userId),Restrictions.eq("receiverId", senderId));
+			criteria.addOrder(Order.asc("messageSentOn"));
+			criteria.addOrder(Order.asc("messageSentAt"));
+			return  criteria.add(Restrictions.or(condition1,condition2)).list();
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
 			return null;
 		}
 	}
@@ -123,12 +144,12 @@ public class MessageDAOImpl implements MessageDAO {
 	}
 
 	@Override
-	public List<Message> allMessageOfACircle(String circleName) {
+	public List<Message> allMessageOfACircle(int circleId) {
 		// TODO Auto-generated method stub
 		try
 		{
 			Criteria criteria=sessionFactory.getCurrentSession().createCriteria(Message.class);
-			criteria.add(Restrictions.eq("circleName", circleName));
+			criteria.add(Restrictions.eq("circleId", circleId));
 			List<Message> allMessageOfCircle=criteria.list();
 			return allMessageOfCircle;
 		}
@@ -137,5 +158,8 @@ public class MessageDAOImpl implements MessageDAO {
 			return null;
 		}
 	}
+
+
+
 
 }

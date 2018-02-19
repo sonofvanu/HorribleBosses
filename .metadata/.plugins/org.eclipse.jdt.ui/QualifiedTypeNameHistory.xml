@@ -14,4 +14,5 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
 <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.domain.EntityScan"/>
 <fullyQualifiedTypeName name="com.stackroute.activitystream.backend.model.Circle"/>
+<fullyQualifiedTypeName name="org.hibernate.criterion.Order"/>
 </qualifiedTypeNameHistroy>

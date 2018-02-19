@@ -21,9 +21,15 @@ public class CircleDAOImpl implements CircleDAO {
 
 	@Override
 	public boolean createCircle(Circle circle) {
+		System.out.println("im here");
 		// TODO Auto-generated method stub
 		try {
-			sessionFactory.getCurrentSession().save(circle);
+			try {
+				sessionFactory.getCurrentSession().save(circle);
+			} catch (Exception e) {
+				// TODO: handle exception
+				sessionFactory.openSession().save(circle);
+			}
 			return true;
 		} catch (Exception e) {
 			return false;

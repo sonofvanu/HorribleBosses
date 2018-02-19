@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.stackroute.activitystream.backend.dao.CircleDAO;
 import com.stackroute.activitystream.backend.model.Circle;
 
-@CrossOrigin
+@CrossOrigin(origins="http://localhost:4200")
 @RestController
 public class CircleController {
 	
@@ -30,6 +30,7 @@ public class CircleController {
 	@PostMapping(value="/circle")
 	public ResponseEntity<String> createCircle(@RequestBody Circle circle)
 	{
+		System.out.println("im here");
 		if(circleDAO.createCircle(circle))
 		{
 			return new ResponseEntity<String>(HttpStatus.CREATED);
@@ -50,7 +51,7 @@ public class CircleController {
 		}
 		else
 		{
-			return new ResponseEntity<List<Circle>>(allCircles,HttpStatus.FOUND);
+			return new ResponseEntity<List<Circle>>(allCircles,HttpStatus.OK);
 		}
 	}
 	

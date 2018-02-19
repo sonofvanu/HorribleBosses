@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,9 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.stackroute.activitystream.backend.dao.MessageDAO;
 import com.stackroute.activitystream.backend.model.Message;
 
+@CrossOrigin(origins="http://localhost:4200")
 @RestController
 public class MessageController {
 	
+
 	@Autowired
 	MessageDAO messageDAO;
 	
@@ -67,15 +70,34 @@ public class MessageController {
 	@GetMapping(value={"/messageUser/{senderId}/{receiverId}"},produces=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<Message>> messageSentToAUser(@PathVariable("senderId") String senderId,@PathVariable("receiverId") String receiverId)
 	{
-		List<Message> messageSentToCircle=messageDAO.allMessageToAUser(senderId, receiverId);
+		List<Message> messageSentToCircle=messageDAO.messgaeBetweentwoUsers(senderId, receiverId);
 		if(messageSentToCircle!=null)
 		{
-			return new ResponseEntity<List<Message>>(messageSentToCircle,HttpStatus.ACCEPTED);
+			return new ResponseEntity<List<Message>>(messageSentToCircle,HttpStatus.OK);
 		}
 		else
 		{
 			return new ResponseEntity<List<Message>>(HttpStatus.CONFLICT);
 		}
 	}
+	
+	
+	@GetMapping(value={"/messageCircle/{circleId}"},produces=MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<List<Message>> messageSentToAUser(@PathVariable("circleId") int circleId)
+	{
+		List<Message> messageSentToCircle=messageDAO.allMessageOfACircle(circleId);
+		if(messageSentToCircle!=null)
+		{
+			return new ResponseEntity<List<Message>>(messageSentToCircle,HttpStatus.OK);
+		}
+		else
+		{
+			return new ResponseEntity<List<Message>>(HttpStatus.CONFLICT);
+		}
+	}
+	
+	
+	
+	
 
 }
