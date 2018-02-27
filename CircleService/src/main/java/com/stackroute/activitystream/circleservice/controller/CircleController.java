@@ -27,7 +27,7 @@ public class CircleController {
 	@Autowired
 	CircleDAO circleDAO;
 	
-	@PostMapping(value="/circle")
+	@PostMapping(value="/circle",consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<String> createCircle(@RequestBody Circle circle)
 	{
 		System.out.println("im here");

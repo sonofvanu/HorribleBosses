@@ -58,7 +58,7 @@ public class MessageController {
 		List<Message> messageSentToCircle=messageDAO.allMessageToACircle(circleName, senderId);
 		if(messageSentToCircle!=null)
 		{
-			return new ResponseEntity<List<Message>>(messageSentToCircle,HttpStatus.ACCEPTED);
+			return new ResponseEntity<List<Message>>(messageSentToCircle,HttpStatus.OK);
 		}
 		else
 		{
@@ -70,10 +70,10 @@ public class MessageController {
 	@GetMapping(value={"/messageUser/{senderId}/{receiverId}"},produces=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<Message>> messageSentToAUser(@PathVariable("senderId") String senderId,@PathVariable("receiverId") String receiverId)
 	{
-		List<Message> messageSentToCircle=messageDAO.messgaeBetweentwoUsers(senderId, receiverId);
-		if(messageSentToCircle!=null)
+		List<Message> messageBetweenUsers=messageDAO.messgaeBetweentwoUsers(senderId, receiverId);
+		if(messageBetweenUsers!=null)
 		{
-			return new ResponseEntity<List<Message>>(messageSentToCircle,HttpStatus.OK);
+			return new ResponseEntity<List<Message>>(messageBetweenUsers,HttpStatus.OK);
 		}
 		else
 		{

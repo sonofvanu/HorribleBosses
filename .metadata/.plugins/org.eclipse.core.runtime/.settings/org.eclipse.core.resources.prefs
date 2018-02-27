@@ -1,4 +1,5 @@
 description.snapshotinterval=60000
 eclipse.preferences.version=1
+org.eclipse.jdt.core.interfaceFormat=ZC6759|GC6700|FGNEG756356|CEB6|QC784|Q9|PQ79
 refresh.enabled=true
 version=1

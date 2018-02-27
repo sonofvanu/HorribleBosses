@@ -1,0 +1,48 @@
+package com.stackroute.activitystream.usercircleservice.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.stackroute.activitystream.backend.dao.UserCircleDAO;
+import com.stackroute.activitystream.backend.model.UserCircle;
+
+@RestController
+public class UserCircleController {
+	@Autowired
+	UserCircleDAO userCircleDao;
+	
+	@PostMapping(value={"/addUserToCircle"},consumes = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<String> adduserToCircle(@RequestBody UserCircle userCircle)
+	{
+		if(userCircleDao.addUserToCircle(userCircle))
+		{
+			return new ResponseEntity<String>(HttpStatus.CREATED);
+		}
+		else
+		{
+			return new ResponseEntity<String>(HttpStatus.FORBIDDEN);
+		}
+	}
+	
+	@PostMapping(value={"/removeUserFromcircle/{circleId}/{userId}"})
+	public ResponseEntity<String> removeuserFromCircle(@PathVariable("circleId") int circleId,@PathVariable("userId") String userId)
+	{
+		if(userCircleDao.removeUserFromCircle(userId, circleId))
+		{
+			return new ResponseEntity<String>(HttpStatus.OK);
+		}
+		else
+		{
+			return new ResponseEntity<String>(HttpStatus.CONFLICT);
+		}
+	}
+	
+
+
+}

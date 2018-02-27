@@ -7452,3 +7452,138 @@ org.eclipse.core.runtime.CoreException: Variable references non-existent resourc
 2018-02-06 11:14:09,309 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-02-06 11:14:09,309 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-02-06 11:14:09,309 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\BackEnd\src\test\resources
+2018-02-23 10:33:44,674 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-23 10:33:44,748 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-23 10:33:44,776 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-23 10:33:44,779 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-23 10:33:44,779 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\BackEnd\src\test\resources
+2018-02-23 10:33:51,079 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-23 10:33:51,080 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-23 10:33:51,107 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-23 10:33:51,110 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-23 10:33:51,110 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\UserService\src\test\resources
+2018-02-23 10:33:54,113 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-23 10:33:54,114 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-23 10:33:54,227 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-23 10:33:54,228 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-23 10:33:54,229 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\CircleService\src\test\resources
+2018-02-23 10:33:57,035 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-23 10:33:57,035 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-23 10:33:57,408 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-23 10:33:57,410 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-23 10:33:57,410 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\MessageService\src\test\resources
+2018-02-23 10:34:06,632 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-23 10:34:06,633 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-23 10:34:06,667 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-23 10:34:06,669 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-23 10:34:06,669 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\SecurityService\src\test\resources
+2018-02-23 10:34:13,859 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-23 10:34:13,860 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-23 10:34:14,209 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-23 10:34:14,212 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-23 10:34:14,212 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\UserCircleService\src\test\resources
+2018-02-25 17:34:17,216 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-25 17:34:17,298 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-25 17:34:17,333 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-25 17:34:17,337 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-25 17:34:17,337 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\CircleService\src\test\resources
+2018-02-25 17:36:49,164 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-25 17:36:49,180 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-25 17:36:49,183 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-25 17:36:49,186 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-25 17:36:49,186 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\CircleService\src\test\resources
+2018-02-25 17:39:18,919 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-25 17:39:18,919 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-25 17:39:18,921 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-25 17:39:18,923 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-25 17:39:18,923 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\CircleService\src\test\resources
+2018-02-26 15:04:05,658 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-26 15:04:05,723 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-26 15:04:05,783 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-26 15:04:05,839 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-26 15:04:05,839 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\BackEnd\src\test\resources
+2018-02-27 12:10:57,339 [Worker-0] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2018-02-27 12:11:02,107 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.stackroute.activitystream:BackEnd:0.0.1-SNAPSHOT @ E:\Iniitian\backupplan\BackEnd\pom.xml.
+2018-02-27 12:11:04,320 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BackEnd/src/main/java
+2018-02-27 12:11:04,321 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BackEnd/src/main/resources
+2018-02-27 12:11:04,321 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BackEnd/src/main/resources
+2018-02-27 12:11:04,322 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BackEnd/src/test/java
+2018-02-27 12:11:06,570 [Worker-0] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 9 sec
+2018-02-27 12:11:08,774 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 12:11:08,781 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-27 12:11:08,840 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 12:11:08,846 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 12:11:08,847 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\BackEnd\src\test\resources
+2018-02-27 12:11:45,853 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 12:11:45,854 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 12:11:45,855 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 12:11:45,879 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 12:11:45,879 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\BackEnd\src\test\resources
+2018-02-27 12:15:49,372 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 12:15:49,372 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-27 12:15:49,389 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 12:15:49,391 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 12:15:49,391 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\MessageService\src\test\resources
+2018-02-27 12:16:36,961 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 12:16:36,966 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-27 12:16:36,969 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 12:16:36,970 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 12:16:36,971 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\MessageService\src\test\resources
+2018-02-27 12:17:10,863 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 12:17:10,864 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-27 12:17:10,878 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 12:17:10,882 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 12:17:10,882 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\BackEnd\src\test\resources
+2018-02-27 16:00:50,979 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 16:00:50,980 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-27 16:00:50,982 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 16:00:50,984 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 16:00:50,984 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\UserCircleService\src\test\resources
+2018-02-27 16:06:06,291 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 16:06:06,292 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-27 16:06:06,294 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 16:06:06,296 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 16:06:06,296 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\UserCircleService\src\test\resources
+2018-02-27 16:08:02,259 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 16:08:02,259 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-27 16:08:02,261 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 16:08:02,262 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 16:08:02,263 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\UserCircleService\src\test\resources
+2018-02-27 16:08:25,822 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 16:08:25,823 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-27 16:08:25,824 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 16:08:25,826 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 16:08:25,826 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\UserCircleService\src\test\resources
+2018-02-27 16:09:02,366 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.stackroute.activitystream:UserCircleService:0.0.1-SNAPSHOT @ E:\Iniitian\backupplan\UserCircleService\pom.xml.
+2018-02-27 16:09:03,895 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 16:09:03,895 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 16:09:03,896 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 16:09:03,897 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 16:09:03,897 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\UserCircleService\src\test\resources
+2018-02-27 16:09:06,709 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 16:09:06,709 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-27 16:09:06,710 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 16:09:06,712 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 16:09:06,712 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\UserCircleService\src\test\resources
+2018-02-27 16:09:27,731 [Worker-38] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2018-02-27 16:09:28,225 [Worker-38] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.stackroute.activitystream:UserCircleService:0.0.1-SNAPSHOT @ E:\Iniitian\backupplan\UserCircleService\pom.xml.
+2018-02-27 16:09:29,470 [Worker-38] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /UserCircleService/src/main/java
+2018-02-27 16:09:29,471 [Worker-38] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /UserCircleService/src/main/resources
+2018-02-27 16:09:29,471 [Worker-38] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /UserCircleService/src/main/resources
+2018-02-27 16:09:29,471 [Worker-38] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /UserCircleService/src/test/java
+2018-02-27 16:09:29,849 [Worker-38] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2018-02-27 16:09:31,261 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 16:09:31,261 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-27 16:09:31,262 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 16:09:31,263 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 16:09:31,263 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\UserCircleService\src\test\resources
+2018-02-27 17:41:56,933 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 17:41:56,934 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-27 17:41:56,936 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 17:41:56,939 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 17:41:56,939 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\UserCircleService\src\test\resources
+2018-02-27 17:45:41,562 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 17:45:41,562 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-27 17:45:41,563 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-27 17:45:41,565 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-27 17:45:41,565 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Iniitian\backupplan\UserCircleService\src\test\resources

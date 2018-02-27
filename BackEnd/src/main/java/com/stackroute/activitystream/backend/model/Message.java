@@ -28,8 +28,7 @@ public class Message {
 	private boolean messageVisibility=true;
 	@Temporal(TemporalType.DATE) @Column
 	private Date messageSentOn;
-	@Temporal(TemporalType.TIME) @Column
-	private Date messageSentAt;
+	
 	
 	public int getMessageId() {
 		return messageId;
@@ -73,11 +72,5 @@ public class Message {
 	public void setMessageSentOn() {
 		this.messageSentOn = new Date();
 	}
-	public Date getMessageSentAt() {
-		return messageSentAt;
-	}
-	public void setMessageSentAt() {
-		this.messageSentAt = new Date();
-	}
-	
+
 }

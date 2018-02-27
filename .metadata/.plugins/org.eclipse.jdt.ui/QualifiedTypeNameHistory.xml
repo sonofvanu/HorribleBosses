@@ -15,4 +15,10 @@
 <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.domain.EntityScan"/>
 <fullyQualifiedTypeName name="com.stackroute.activitystream.backend.model.Circle"/>
 <fullyQualifiedTypeName name="org.hibernate.criterion.Order"/>
+<fullyQualifiedTypeName name="com.stackroute.activitystream.backend.dao.UserCircleDAO"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+<fullyQualifiedTypeName name="com.stackroute.activitystream.backend.model.UserCircle"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
 </qualifiedTypeNameHistroy>

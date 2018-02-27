@@ -100,7 +100,6 @@ public class MessageDAOImpl implements MessageDAO {
 			Criterion condition1=Restrictions.and(Restrictions.eq("senderId", senderId),Restrictions.eq("receiverId", userId));
 			Criterion condition2=Restrictions.and(Restrictions.eq("senderId", userId),Restrictions.eq("receiverId", senderId));
 			criteria.addOrder(Order.asc("messageSentOn"));
-			criteria.addOrder(Order.asc("messageSentAt"));
 			return  criteria.add(Restrictions.or(condition1,condition2)).list();
 			
 			
