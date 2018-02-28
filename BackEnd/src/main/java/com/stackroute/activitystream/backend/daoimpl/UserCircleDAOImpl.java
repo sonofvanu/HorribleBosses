@@ -44,25 +44,12 @@ public class UserCircleDAOImpl implements UserCircleDAO {
 	}
 
 	@Override
-	public boolean removeUserFromCircle(String userId, int circleId) {
+	public boolean removeUserFromCircle(UserCircle userCircle) {
 		// TODO Auto-generated method stub
 		try
 		{
-			Criteria criteria=sessionFactory.getCurrentSession().createCriteria(UserCircle.class);
-			criteria.add(Restrictions.eq("userId", userId)).add(Restrictions.eq("circleId", circleId));
-			List<UserCircle> matchedUserCircle=criteria.list();
-			if(matchedUserCircle.size()>=1)
-			{
-				UserCircle userCircle=matchedUserCircle.get(0);
-				sessionFactory.getCurrentSession().delete(userCircle);
-				logger.debug("User "+userCircle.getUserId()+" has been removed from the circle "+userCircle.getCircleName());
-				return true;
-			}
-			else
-			{
-				logger.error("User cannot be removed from the circle "+circleId);
-				return false;
-			}
+			sessionFactory.getCurrentSession().saveOrUpdate(userCircle);
+			return true;
 		}
 		catch(Exception e)
 		{
@@ -78,6 +65,7 @@ public class UserCircleDAOImpl implements UserCircleDAO {
 		{
 			Criteria criteria=sessionFactory.getCurrentSession().createCriteria(UserCircle.class);
 			criteria.add(Restrictions.eq("userId",userId ));
+			criteria.add(Restrictions.eq("circleStatus", true));
 			List<UserCircle> listOfCircleOfUser=criteria.list();
 			if(listOfCircleOfUser.size()>=1)
 			{

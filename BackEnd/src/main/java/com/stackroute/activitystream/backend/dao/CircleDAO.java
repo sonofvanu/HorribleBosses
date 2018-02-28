@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.stackroute.activitystream.backend.model.Circle;
+import com.stackroute.activitystream.backend.model.UserCircle;
 
 
 public interface CircleDAO {
@@ -18,5 +19,5 @@ public interface CircleDAO {
 	
 	public List<Circle> listOfAllCircles();
 	
-
+	
 }

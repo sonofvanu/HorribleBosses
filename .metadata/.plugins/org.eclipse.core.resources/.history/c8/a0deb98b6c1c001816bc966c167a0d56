@@ -1,0 +1,69 @@
+package com.stackroute.activitystream.usercircleservice.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.stackroute.activitystream.backend.dao.UserCircleDAO;
+import com.stackroute.activitystream.backend.model.UserCircle;
+
+@CrossOrigin(origins="http://localhost:4200")
+@RestController
+public class UserCircleController {
+	@Autowired
+	UserCircleDAO userCircleDao;
+	
+	@PostMapping(value={"/addUserToCircle"},consumes = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<String> adduserToCircle(@RequestBody UserCircle userCircle)
+	{
+		userCircle.setJoinedOn();
+		if(userCircleDao.addUserToCircle(userCircle))
+		{
+			return new ResponseEntity<String>(HttpStatus.CREATED);
+		}
+		else
+		{
+			return new ResponseEntity<String>(HttpStatus.FORBIDDEN);
+		}
+	}
+	
+	@PostMapping(value={"/removeUserFromcircle/{circleId}/{userId}"})
+	public ResponseEntity<String> removeuserFromCircle(@PathVariable("circleId") int circleId,@PathVariable("userId") String userId)
+	{
+		if(userCircleDao.removeUserFromCircle(userId, circleId))
+		{
+			return new ResponseEntity<String>(HttpStatus.OK);
+		}
+		else
+		{
+			return new ResponseEntity<String>(HttpStatus.CONFLICT);
+		}
+	}
+	
+	@GetMapping(value={"/usersCircles/{userId}"},produces=MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<List<UserCircle>> allCirclesOfuser(@PathVariable("userId") String userId)
+	{
+		List<UserCircle> usersCircle=userCircleDao.listOfCirclesOfAuser(userId);
+		
+		if(usersCircle!=null)
+		{
+			return new ResponseEntity<>(usersCircle,HttpStatus.OK);
+		}
+		else
+		{
+			return new ResponseEntity<>(usersCircle,HttpStatus.CONFLICT);
+		}
+	}
+	
+
+
+}

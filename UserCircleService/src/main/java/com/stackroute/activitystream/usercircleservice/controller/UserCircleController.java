@@ -6,15 +6,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.stackroute.activitystream.backend.dao.UserCircleDAO;
 import com.stackroute.activitystream.backend.model.UserCircle;
 
+@CrossOrigin(origins="http://localhost:4200")
 @RestController
 public class UserCircleController {
 	@Autowired
@@ -23,6 +26,7 @@ public class UserCircleController {
 	@PostMapping(value={"/addUserToCircle"},consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<String> adduserToCircle(@RequestBody UserCircle userCircle)
 	{
+		userCircle.setJoinedOn();
 		if(userCircleDao.addUserToCircle(userCircle))
 		{
 			return new ResponseEntity<String>(HttpStatus.CREATED);
@@ -33,10 +37,10 @@ public class UserCircleController {
 		}
 	}
 	
-	@PostMapping(value={"/removeUserFromcircle/{circleId}/{userId}"})
-	public ResponseEntity<String> removeuserFromCircle(@PathVariable("circleId") int circleId,@PathVariable("userId") String userId)
+	@PutMapping(value="/removeUserFromcircle")
+	public ResponseEntity<String> removeuserFromCircle(@RequestBody UserCircle userCircle)
 	{
-		if(userCircleDao.removeUserFromCircle(userId, circleId))
+		if(userCircleDao.removeUserFromCircle(userCircle))
 		{
 			return new ResponseEntity<String>(HttpStatus.OK);
 		}

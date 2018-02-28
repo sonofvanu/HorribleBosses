@@ -2,6 +2,7 @@ package com.stackroute.activitystream.backend.daoimpl;
 
 import java.util.List;
 
+import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -10,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.stackroute.activitystream.backend.dao.CircleDAO;
 import com.stackroute.activitystream.backend.model.Circle;
+import com.stackroute.activitystream.backend.model.UserCircle;
 
 @Repository(value = "circleDAO")
 @Transactional
@@ -74,5 +76,7 @@ public class CircleDAOImpl implements CircleDAO {
 		List<Circle> listOfAllCircles = sessionFactory.getCurrentSession().createQuery("FROM Circle").list();
 		return listOfAllCircles;
 	}
+
+
 
 }
