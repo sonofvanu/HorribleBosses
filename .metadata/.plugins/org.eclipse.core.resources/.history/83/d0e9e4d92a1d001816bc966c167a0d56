@@ -87,17 +87,17 @@ public class UserCircleDAOImpl implements UserCircleDAO {
 	}
 
 	@Override
-	public List<UserCircle> listOfUsersOfACircle(int circleId) {
+	public List<UserCircle> listOfUsersOfACircle(String circleName) {
 		// TODO Auto-generated method stub
 		try
 		{
 			Criteria criteria=sessionFactory.getCurrentSession().createCriteria(UserCircle.class);
 			
-			criteria.add(Restrictions.eq("circleId", circleId));
+			criteria.add(Restrictions.eq("circleName", circleName));
 			List<UserCircle> listOfUsersOfCircle=criteria.list();
 			if(listOfUsersOfCircle.size()>=1)
 			{
-				logger.debug("the list of users of a circle has been generated for the circle "+circleId);
+				logger.debug("the list of users of a circle has been generated for the circle "+circleName);
 				return listOfUsersOfCircle;
 			}
 			else

@@ -15,7 +15,7 @@ public interface UserCircleDAO {
 	
 	public List<UserCircle> listOfCirclesOfAuser(String userId);
 	
-	public List<UserCircle> listOfUsersOfACircle(int circleId);
+	public List<UserCircle> listOfUsersOfACircle(String circleName);
 	
 	
 
